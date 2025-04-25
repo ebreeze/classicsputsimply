@@ -1,0 +1,59 @@
+# Created by https://www.toptal.com/developers/gitignore
+
+### Spring Boot ###
+/target/
+!/target/classes/application.properties
+!/target/classes/application.yml
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Project specific
+/out/
+
+### Maven ###
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+### Gradle ###
+/build
+/out
+.gradle
+build/
+**/build/outputs/
+**/build/tmp/
+/bin
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.gz
+*.log
+
+# Spring specific
+/dump.rdb
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+# Eclipse
+.settings/
+/bin
+/tmp
+/out
+
