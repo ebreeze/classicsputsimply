@@ -1,0 +1,9 @@
+{
+  "id": "lg001",
+  "name": "König Artus",
+  "slug": "king-artur",
+  "pages": [
+    { "title": "", "text": "In ferner Zeit...", "imageUrl": "/images/king-artur/page1.jpg" },
+    { "title": "", "text": "Er zog das Schwert...", "imageUrl": "/images/king-artur/page2.jpg" }
+  ]
+}

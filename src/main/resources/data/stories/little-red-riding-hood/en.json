@@ -1,0 +1,10 @@
+{
+  "id": "ft001",
+  "name": "Little Red Riding Hood",
+  "slug": "little-red-riding-hood",
+  "pages": [
+    { "title": "", "text": "Once upon a time...", "imageUrl": "/images/little-red-riding-hood/page1.jpg" },
+    { "title": "", "text": "She lived with her mother...", "imageUrl": "/images/little-red-riding-hood/page2.jpg" }
+  ]
+}
+

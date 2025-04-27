@@ -1,0 +1,9 @@
+{
+  "id": "lg001",
+  "name": "King Arthur",
+  "slug": "king-arthur",
+  "pages": [
+    { "title": "", "text": "In a distant time...", "imageUrl": "/images/king-arthur/page1.jpg" },
+    { "title": "", "text": "He drew his sword...", "imageUrl": "/images/king-arthur/page2.jpg" }
+  ]
+}
