@@ -1,0 +1,9 @@
+{
+  "id": "ft001",
+  "name": "Rotkäppchen",
+  "slug": "little-red-riding-hood",
+  "pages": [
+    { "title": "", "text": "Es war einmal...", "imageUrl": "/images/little-red-riding-hood/page1.jpg" },
+    { "title": "", "text": "Sie lebte bei ihrer Mutter...", "imageUrl": "/images/little-red-riding-hood/page2.jpg" }
+  ]
+}

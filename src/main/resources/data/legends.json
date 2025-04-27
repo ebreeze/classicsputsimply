@@ -1,0 +1,20 @@
+[
+  { "id": "lg001",
+    "name": "King Arthur",
+    "titles": {
+      "en": "King Arthur",
+      "de": "König Artus",
+      "fr": "Le roi Arthur"
+    },
+    "slug": "king-arthur"
+  },
+  { "id": "lg002",
+    "name": "Robin Hood",
+    "titles": {
+      "en": "Robin Hood",
+      "de": "Robin Hood",
+      "fr": "Robin des Bois"
+    },
+    "slug": "robin-hood"
+  }
+]
