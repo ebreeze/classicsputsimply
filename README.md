@@ -2,7 +2,9 @@
 
 ## About
 
-Classics-Put-Simply is an educational project designed to make classic legends, stories, and fairy tales highly accessible. It aims to provide valuable language development stimuli for children with language deficits, hearing impairments, as well as those growing up in multilingual environments. The project utilizes a RESTful API to serve simplified classic content, focusing on clarity and ease of understanding.
+Classics-Put-Simply is an educational project designed to make classic legends, stories, and fairy tales highly accessible. 
+It aims to provide valuable language development stimuli for children with language deficits, hearing impairments, as well as those growing up in multilingual environments. 
+The project provides a REST API to deliver story content.
 
 ## Getting Started
 
@@ -44,7 +46,8 @@ This guide will help you get the backend REST API up and running.
     java -jar ./build/libs/classicsputsimply-0.0.1-SNAPSHOT.jar
     ```
 
-    This will start the Spring Boot application, and it will be accessible on port `8080` by default. You should see logs in your console indicating that the application has started.
+    This will start the Spring Boot application, and it will be accessible on port `8080` by default. 
+You should see logs in your console indicating that the application has started.
 
 ## Testing the API
 
@@ -66,3 +69,10 @@ Once the application is running, you can test the following endpoints:
 ### Swagger UI
 
 For a more interactive way to explore and test the API endpoints, you can access the Swagger UI:
+http://localhost:8080/swagger-ui/index.html
+
+### Run Tests
+
+    ```bash
+    ./gradlew test
+    ```

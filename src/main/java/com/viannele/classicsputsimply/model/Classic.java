@@ -10,14 +10,21 @@ public class Classic {
     private List<Page> pages; // For storing content when fetching a specific story
     private Map<String, String> titles;
 
-    public Classic() {
-    }
-
-    public Classic(String id, String name, Map<String, String> titles, String slug) {
+    public Classic(String id, String name, String slug, Map<String, String> titles) {
         this.id = id;
         this.name = name;
         this.slug = slug;
         this.titles = titles;
+    }
+
+    public Classic(String id, String name, String slug) {
+        this.id = id;
+        this.name = name;
+        this.slug = slug;
+    }
+
+    public Classic() {
+        // placeholder to be filled later
     }
 
     public String getId() {
