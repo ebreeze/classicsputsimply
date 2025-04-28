@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classics put simply.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@3/dist/vuetify.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <div id="app">
+        <v-app>
+            <v-main>
+                <header>
+                    <v-app-bar app :elevation="2">
+                        <v-img
+                            class="mx-2"
+                            src="/assets/images/logo.png"
+                            max-height="40"
+                            max-width="80"
+                            contain
+                        ></v-img>
+                        <v-toolbar-title class="ml-2">
+                            {{ $t('appName') }}
+                        </v-toolbar-title>
+                    </v-app-bar>
+
+                    <nav class="top-menu">
+                        <a
+                            href="#"
+                            @click.prevent="currentView = 'about'"
+                            :class="{ 'top-menu-item--active': currentView === 'about' }"
+                        >
+                            <v-icon>mdi-information-outline</v-icon>
+                            <span>{{ $t('menu.about') }}</span>
+                        </a>
+                        <a
+                            href="#"
+                            @click.prevent="currentView = 'stories'"
+                            :class="{ 'top-menu-item--active': currentView === 'stories' }"
+                        >
+                            <v-icon>mdi-book-open-variant</v-icon>
+                            <span>{{ $t('menu.stories') }}</span>
+                        </a>
+                        <v-menu bottom offset>
+                            <template v-slot:activator="{ props }">
+                                <a href="#" v-bind="props">
+                                    <v-icon>mdi-translate</v-icon>
+                                    <span>{{ selectedLangDisplay }}</span>
+                                </a>
+                            </template>
+                            <v-list>
+                                <v-list-item v-for="lang in availableLanguages" :key="lang.value" @click="changeLanguage(lang.value)">
+                                    <v-list-item-title>{{ lang.title }}</v-list-item-title>
+                                </v-list-item>
+                            </v-list>
+                        </v-menu>
+                    </nav>
+                </header>
+
+                <v-dialog v-model="dialog" persistent transition="modal-fade-transition">
+                    <v-card v-if="selectedStoryContent" class="story-modal-card" id="story-content-card">
+                        <v-card-title class="d-flex align-center justify-space-between">
+                            <span class="text-h5">{{ selectedStoryContent.name }}</span>
+                            <v-btn icon @click="dialog = false; selectedStoryContent = null; carouselIndex = 0;">
+                                <v-icon>mdi-close</v-icon>
+                            </v-btn>
+                        </v-card-title>
+                        <v-card-text id="story-content-card-text">
+                            <v-carousel
+                                v-model="carouselIndex"
+                                hide-delimiters
+                                show-arrows="always"
+                                class="mt-4"
+                            >
+                                <v-carousel-item
+                                    v-for="(page, index) in selectedStoryContent.pages"
+                                    :key="index"
+                                >
+                                    <v-sheet
+                                        :color="'grey lighten-' + (index % 5 + 2)"
+                                        height="auto"
+                                        tile
+                                    >
+                                        <div class="d-flex flex-column align-center justify-center pa-4">
+                                            <h3>{{ $t('story.page') }} {{ index + 1 }}</h3>
+                                            <p>{{ page.text }}</p>
+                                            <img v-if="page.imageUrl" :src="page.imageUrl" alt="Page Image" class="page-image">
+                                        </div>
+                                    </v-sheet>
+                                </v-carousel-item>
+                            </v-carousel>
+                        </v-card-text>
+                    </v-card>
+                </v-dialog>
+
+                <div class="main-content">
+                    <v-alert v-if="error" type="error">{{ error }}</v-alert>
+
+                    <div v-if="currentView === 'about'">
+                        <h2>{{ $t('about.title') }}</h2>
+                        <p>{{ $t('about.content') }}</p>
+                    </div>
+
+                    <div v-if="currentView === 'stories' && !dialog">
+                        <h2>{{ $t('stories.title') }}</h2>
+                        <v-list v-if="filteredClassics.length > 0">
+                            <v-list-item v-for="classic in filteredClassics" :key="classic.id" @click="openStoryDialog(classic.slug)">
+                                <v-list-item-title>{{ classic.name }}</v-list-item-title>
+                            </v-list-item>
+                        </v-list>
+                        <p v-else-if="!error">{{ $t('stories.loading') }}</p>
+                    </div>
+
+                    <div v-if="currentView === 'faq'">
+                        <h2>{{ $t('bottomNav.faq') }}</h2>
+                        <p>{{ $t('faq.content') }}</p>
+                    </div>
+
+                    <div v-if="currentView === 'legal'">
+                        <h2>{{ $t('bottomNav.legal') }}</h2>
+                        <p>{{ $t('legal.content') }}</p>
+                    </div>
+
+                    <div v-else-if="!currentView">
+                        <p>{{ $t('home.instruction') }}</p>
+                    </div>
+                </div>
+            </v-main>
+
+            <v-bottom-navigation grow color="primary" dark :value="currentView">
+                <v-btn value="faq">
+                    <span>{{ $t('bottomNav.faq') }}</span>
+                    <v-icon>mdi-frequently-asked-questions</v-icon>
+                </v-btn>
+                <v-btn value="impressum">
+                    <span>{{ $t('menu.impressum') }}</span>
+                    <v-icon>mdi-file-document-outline</v-icon>
+                </v-btn>
+            </v-bottom-navigation>
+        </v-app>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3/dist/vuetify.min.js"></script>
+    <script src="https://unpkg.com/vue-i18n@9"></script>
+
+    <script>
+        const { createApp, ref, onMounted, computed } = Vue;
+        const { createVuetify } = Vuetify;
+        const { createI18n, useI18n } = VueI18n;
+
+        async function loadTranslations() {
+            try {
+                const response = await fetch('/assets/content/i18n.json');
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error loading translations:', error);
+                return {};
+            }
+        }
+
+        async function setupI18n() {
+            const messages = await loadTranslations();
+            return createI18n({
+                legacy: false, // Explicitly disable legacy mode
+                locale: 'de', // Default locale
+                fallbackLocale: 'de',
+                messages
+            });
+        }
+
+        async function startApp() {
+            const i18n = await setupI18n();
+            const vuetify = createVuetify();
+
+            createApp({
+                setup() {
+                    const { t, locale } = useI18n();
+                    const backendUrl = 'http://localhost:8080/api/v1/classics'; // CONF: Your backend URL
+                    const classics = ref([]);
+                    const selectedStoryContent = ref(null);
+                    const selectedLang = ref('de');
+                    const error = ref('');
+                    const carouselIndex = ref(0); // To control the current page in the carousel
+                    const currentView = ref(ref(null)); // Make currentView a ref
+                    const dialog = ref(false);
+                    const availableLanguages = ref([
+                        { value: 'de', title: t('menu.german') },
+                        { value: 'en', title: t('menu.english') },
+                        { value: 'fr', title: t('menu.french') }
+                    ]);
+
+                    const selectedLangDisplay = computed(() => {
+                        const langObject = availableLanguages.value.find(lang => lang.value === selectedLang.value);
+                        return langObject ? langObject.title : t('menu.language');
+                    });
+
+                    const filteredClassics = computed(() => {
+                        return classics.value.map(classic => ({
+                            ...classic,
+                            name: classic.titles[selectedLang.value] || classic.name
+                        }));
+                    });
+
+                    onMounted(async () => {
+                        await fetchClassics();
+                    });
+
+                    async function fetchClassics() {
+                        error.value = '';
+                        try {
+                            const response = await axios.get(backendUrl);
+                            classics.value = response.data;
+                        } catch (err) {
+                            error.value = t('errors.fetchClassics');
+                            console.error(err);
+                        }
+                    }
+
+                    async function fetchStoryContent(slug) {
+                        error.value = '';
+                        selectedStoryContent.value = null;
+                        carouselIndex.value = 0; // Reset carousel to the first page
+                        try {
+                            const response = await axios.get(`${backendUrl}/story/${slug}?lang=${selectedLang.value}`);
+                            selectedStoryContent.value = response.data;
+                            dialog.value = true; // Open the dialog
+                        } catch (err) {
+                            if (err.response && err.response.status === 404) {
+                                error.value = t('errors.storyNotFound', { slug: slug, lang: selectedLangDisplay.value });
+                            } else {
+                                error.value = t('errors.fetchStoryContent');
+                                console.error(err);
+                            }
+                        }
+                    }
+
+                    function changeLanguage(lang) {
+                        selectedLang.value = lang;
+                        locale.value = lang;
+                    }
+
+                    function openStoryDialog(slug) {
+                        fetchStoryContent(slug);
+                    }
+
+                    return {
+                        t,
+                        classics,
+                        selectedStoryContent,
+                        selectedLang,
+                        selectedLangDisplay,
+                        availableLanguages,
+                        error,
+                        carouselIndex,
+                        currentView,
+                        dialog,
+                        filteredClassics,
+                        fetchClassics,
+                        fetchStoryContent,
+                        changeLanguage,
+                        openStoryDialog
+                    };
+                }
+            }).use(i18n).use(vuetify).mount('#app');
+        }
+
+        startApp();
+    </script>
+
+</body>
+</html>

@@ -18,13 +18,12 @@ public class ClassicsputsimplyApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/v1/classics")
-				        .allowedOrigins("https://classicsputsimple.com", "http://localhost:5173", "http://localhost:80", "http://localhost:8080")
+				registry.addMapping("/api/v1/**")
+				        .allowedOrigins("https://classicsputsimple.com", "http://localhost:81", "http://localhost:80", "http://localhost:5173", "http://localhost:8000")
 						.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 						.allowedHeaders("*")
 						.allowCredentials(true)
 						.maxAge(3600);
-
 			}
 		};
 	}
