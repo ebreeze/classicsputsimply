@@ -1,0 +1,36 @@
+{
+    "name": "Le Petit Chaperon Rouge",
+    "slug": "little-red-riding-hood",
+    "pages": [
+      {
+        "title": "L'avertissement de la mère",
+        "text": "Le Petit Chaperon Rouge vivait avec sa mère dans une maison à côté de la forêt.\nSa mère donna au Petit Chaperon Rouge un panier avec du gâteau et du jus de fruits. Elle dit : « S'il te plaît, va chez ta grand-mère. Elle est malade. Ne t'éloigne pas du chemin. Sois prudente ! » Le Petit Chaperon Rouge dit : « Oui, maman ! » et partit.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Le Petit Chaperon Rouge rencontre le loup",
+        "text": "Dans la forêt, le Petit Chaperon Rouge rencontra le loup. Le loup dit : « Où vas-tu ? » Le Petit Chaperon Rouge dit : « Chez ma grand-mère. Elle est malade. »\nLe loup dit : « Où habite-t-elle ? » Le Petit Chaperon Rouge dit : « Dans la maison\nderrière les arbres. »\nLe loup pensa : « Je veux y être le premier ! » Il courut rapidement vers la maison de la grand-mère.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "Le loup mange la grand-mère",
+        "text": "Le loup arriva à la maison de grand-mère. Il frappa à la porte.\nGrand-mère dit : « Qui est là ? »\nLe loup dit : « C'est le Petit Chaperon Rouge. »\nGrand-mère ouvrit la porte. Le loup lui sauta dessus et la mangea. Puis il mit ses lunettes et son bonnet. Il se coucha dans le lit.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "Le Petit Chaperon Rouge arrive à la maison",
+        "text": "Le Petit Chaperon Rouge arriva et dit : « Bonjour, grand-mère. » Le loup dit d'une voix douce : « Bonjour, mon enfant. »\nLe Petit Chaperon Rouge fut surprise. Elle dit : « Grand-mère, pourquoi as-tu de si grands yeux ? » Le loup dit : « Pour mieux te voir. »\nLe Petit Chaperon Rouge continua : « Pourquoi as-tu de si grandes dents ? » Le loup dit : « Pour mieux te manger ! »\nEt puis il mangea aussi le Petit Chaperon Rouge.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "Le chasseur trouve le loup",
+        "text": "Un chasseur passait près de la maison. Il entendit un fort ronflement.\nIl entra dans la maison et vit le loup au lit avec un gros ventre.\nLe chasseur dit : « Le loup a mangé grand-mère ! » Il prit ses ciseaux et ouvrit le ventre du loup.\nLe Petit Chaperon Rouge et grand-mère sortirent. Elles étaient vivantes !",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "La célébration",
+        "text": "Le Petit Chaperon Rouge, grand-mère et le chasseur étaient heureux. Ils burent du jus de fruits et mangèrent du gâteau du panier.\nLe Petit Chaperon Rouge dit : « Merci, cher chasseur ! »\nGrand-mère dit : « Tu nous as sauvées. »\nTout le monde rit et célébra. Le méchant loup était parti, et tout le monde était\nà nouveau heureux.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

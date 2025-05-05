@@ -1,0 +1,36 @@
+{
+  "name": "Il pescatore e il pesce d'oro",
+  "slug": "the-fisherman-and-the-golden-fish",
+  "pages": [
+    {
+      "title": "La scoperta",
+      "text": "C'era una volta un vecchio pescatore e sua moglie che vivevano poveramente in riva al mare. Un giorno, il vecchio pescò un pesce d'oro che sapeva parlare! Implorando per la sua vita, il pesce promise di esaudire qualsiasi desiderio in cambio della libertà. Il pescatore sorpreso lo rilasciò senza chiedere nulla.",
+      "imageUrl": "page1.png"
+    },
+    {
+      "title": "Le prime richieste",
+      "text": "Tornato a casa, il vecchio raccontò alla moglie del miracolo. Lei lo rimproverò per la sua stupidità e pretese che tornasse dal pesce e chiedesse una nuova madia, poiché la loro era rotta. Il vecchio tornò a malincuore e il pesce d'oro esaudì il loro primo desiderio.",
+      "imageUrl": "page2.png"
+    },
+    {
+      "title": "Ambizione crescente",
+      "text": "Ma i desideri della moglie non si fermarono qui. Presto, trovò la nuova madia insufficiente e insistette che suo marito chiedesse al pesce d'oro una nuova casa. Ancora una volta, il vecchio obbedì e la loro umile dimora fu sostituita da una bella casa nuova.",
+      "imageUrl": "page3.png"
+    },
+    {
+      "title": "Titoli e potere",
+      "text": "Diventando sempre più ambiziosa, la vecchia pretese di diventare una nobildonna. Il paziente pesce d'oro esaudì anche questo desiderio, e lei visse nella grandezza con dei servi. Eppure, il suo malcontento continuò a covare.",
+      "imageUrl": "page4.png"
+    },
+    {
+      "title": "La ricerca della regalità",
+      "text": "Poi, l'insaziabile moglie ordinò al marito di chiedere al pesce d'oro di farla regina. Nonostante il mare tempestoso che rifletteva la sua crescente avidità, il pesce esaudì ancora una volta il suo desiderio, e lei divenne una potente sovrana.",
+      "imageUrl": "page5.png"
+    },
+    {
+      "title": "La caduta",
+      "text": "Finalmente, nel suo atto di massima avidità, la vecchia pretese di diventare la sovrana del mare stesso, ordinando al pesce d'oro di essere il suo servitore. Il mare si infuriò. Quando il vecchio tornò a casa, il palazzo era scomparso, e si ritrovarono nella loro vecchia capanna con la madia rotta, avendo perso tutto.",
+      "imageUrl": "page6.png"
+    }
+  ]
+}

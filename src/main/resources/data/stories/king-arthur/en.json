@@ -1,9 +1,36 @@
 {
-  "id": "lg001",
   "name": "King Arthur",
   "slug": "king-arthur",
   "pages": [
-    { "title": "", "text": "In a distant time...", "imageUrl": "/images/king-arthur/page1.jpg" },
-    { "title": "", "text": "He drew his sword...", "imageUrl": "/images/king-arthur/page2.jpg" }
+    {
+      "title": "The Sword in the Stone",
+      "text": "Many years ago, in Britain, there was no king. The land was divided, and many lords fought for power. One day, a magical sword appeared, embedded in a stone. An inscription read, 'Whoever pulls this sword from this stone is the rightful king of England.' Many tried, but none could succeed.",
+      "imageUrl": "page1.png"
+    },
+    {
+      "title": "Arthur Pulls the Sword",
+      "text": "A young boy named Arthur was traveling with Sir Ector and his son Kay to a tournament in London. Kay's sword was left behind, and Arthur went to find one. He came across the sword in the stone and, without knowing its significance, easily pulled it out. He brought it to Kay, who realized its power.",
+      "imageUrl": "page2.png"
+    },
+    {
+      "title": "Arthur, the Rightful King",
+      "text": "When the lords saw Arthur with the sword, they were astonished. The Archbishop gathered them, and Arthur proved his right to the throne by pulling the sword from the stone again in front of everyone. He was crowned King of England.",
+      "imageUrl": "page3.png"
+    },
+    {
+      "title": "The Round Table",
+      "text": "King Arthur, a wise and just ruler, gathered noble knights to serve him. He created the Round Table, where all knights were equal and would sit together to discuss important matters and plan their quests.",
+      "imageUrl": "page4.png"
+    },
+    {
+      "title": "Merlin's Guidance",
+      "text": "The wise wizard Merlin was Arthur's advisor. He guided the young king with his magic and knowledge, helping him to make wise decisions and protect his kingdom.",
+      "imageUrl": "page5.png"
+    },
+    {
+      "title": "The Adventures Begin",
+      "text": "And so began the reign of King Arthur and his Knights of the Round Table. They embarked on many brave adventures, fighting evil, helping the weak, and bringing justice to the land. The tales of their courage and chivalry spread throughout the kingdom.",
+      "imageUrl": "page6.png"
+    }
   ]
 }

@@ -1,0 +1,36 @@
+{
+    "name": "Le Lièvre et la Tortue",
+    "slug": "the-tortoise-and-the-hare",
+    "pages": [
+      {
+        "title": "Lièvre Rapide !",
+        "text": "Un lièvre rapide adorait courir vite. Il se moquait de la tortue lente. \"Tu es si lente !\" disait le lièvre. La tortue était silencieuse, mais elle avait une idée.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "L'Heure de la Course !",
+        "text": "La tortue dit : \"Faisons une course !\" Le lièvre gloussa. \"Une course avec toi ? D'accord !\" Tous les animaux vinrent les regarder.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "Le Lièvre Court Loin Devant",
+        "text": "La course commença. Vroum ! Le lièvre courut super vite. Il était loin devant la tortue. Il s'arrêta sous un arbre. \"La tortue est si lente,\" pensa-t-il. \"Je vais faire une petite sieste.\"",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "L'Heure de la Sieste pour le Lièvre",
+        "text": "Le lièvre s'endormit sous l'arbre. Zzzzz ! La tortue continua de marcher lentement mais sûrement. Elle ne s'arrêta pas. Elle continua juste.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "La Tortue Continue",
+        "text": "Le soleil se coucha. Le lièvre se réveilla ! Il regarda autour de lui. Oh non ! Il vit que la tortue était près de la ligne d'arrivée ! Le lièvre courut aussi vite qu'il le pouvait !",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "Lentement mais Sûrement !",
+        "text": "La tortue franchit la ligne d'arrivée ! Les animaux applaudirent. Le lièvre était triste. La tortue sourit. \"Rien ne sert de courir, il faut partir à point !\" dit-elle. Le lièvre apprit une bonne leçon.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

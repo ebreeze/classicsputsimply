@@ -67,7 +67,11 @@ public class ClassicsController {
             }
     )
     public ResponseEntity<Classic> getClassicContentBySlug(
-            @PathVariable @Parameter(description = "Slug of the classic story (e.g., little-red-riding-hood)") String slug,
+            @PathVariable @Parameter(
+                    description = "Slug of the classic story (e.g., little-red-riding-hood)",
+                    example = "little-red-riding-hood",
+                    name = "slug"
+            ) String slug,
             @RequestParam(name = "lang", defaultValue = "en") String lang) {
         try {
             Classic classic = classicsService.getClassicContentBySlug(slug, lang);
@@ -79,6 +83,20 @@ public class ClassicsController {
         } catch (IOException e) {
             logger.error("Error retrieving classic content:", e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/pdf/{slug}")
+    public ResponseEntity<byte[]> generatePdf(@PathVariable String slug) {
+        // Implementation to generate PDF using classicsService
+        try {
+            byte[] pdfBytes = classicsService.generatePdf(slug); //  Make sure this method exists
+            return ResponseEntity.ok()
+                    .header("Content-Type", "application/pdf")
+                    .body(pdfBytes);
+        } catch (Exception e) {
+            logger.info("PDF Generation Exception: ", e);
+            return ResponseEntity.internalServerError().build();
         }
     }
 }

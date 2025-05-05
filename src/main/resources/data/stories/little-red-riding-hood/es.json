@@ -1,0 +1,36 @@
+{
+    "name": "Caperucita Roja",
+    "slug": "little-red-riding-hood",
+    "pages": [
+      {
+        "title": "La advertencia de la madre",
+        "text": "Caperucita Roja vivía con su madre en una casa junto al bosque.\nSu madre le dio a Caperucita Roja una cesta con pastel y\nzumo. Le dijo: «Por favor, ve a casa de tu abuelita. Está enferma. No te salgas\ndel camino. ¡Ten cuidado!» Caperucita Roja dijo: «¡Sí, mamá!» y se marchó.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Caperucita Roja se encuentra con el lobo",
+        "text": "En el bosque, Caperucita Roja se encontró con el lobo. El lobo dijo: «¿A dónde\nvas?» Caperucita Roja dijo: «A casa de mi abuela. Está enferma.»\nEl lobo dijo: «¿Dónde vive?» Caperucita Roja dijo: «En la casa\ndetrás de los árboles.»\nEl lobo pensó: «¡Quiero estar allí primero!» Corrió rápidamente\nhacia la casa de la abuela.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "El lobo se come a la abuela",
+        "text": "El lobo llegó a la casa de la abuela. Llamó a la puerta.\nLa abuela dijo: «¿Quién es?»\nEl lobo dijo: «Soy Caperucita Roja.»\nLa abuela abrió la puerta. El lobo saltó sobre ella y\nse la comió. Luego se puso sus gafas y su gorro. Se acostó\nen la cama.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "Caperucita Roja llega a la casa",
+        "text": "Caperucita Roja llegó y dijo: «Buenos días, abuelita.» El lobo\ndijo con voz suave: «Buenos días, mi niña.»\nCaperucita Roja se sorprendió. Dijo: «Abuelita, ¿por qué tienes unos ojos tan\ngrandes?» El lobo dijo: «Para verte mejor.»\nCaperucita Roja continuó: «¿Por qué tienes unos dientes tan\ngrandes?» El lobo dijo: «¡Para comerte mejor!»\nY entonces también se comió a Caperucita Roja.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "El cazador encuentra al lobo",
+        "text": "Un cazador pasaba por la casa. Oyó unos ronquidos fuertes.\nEntró en la casa y vio al lobo en la cama con una gran\npancita.\nEl cazador dijo: «¡El lobo se ha comido a la abuela!» Cogió\nsus tijeras y abrió la barriga del lobo.\nCaperucita Roja y la abuela salieron. ¡Estaban vivas!",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "La celebración",
+        "text": "Caperucita Roja, la abuela y el cazador estaban felices. Bebieron\nzumo y comieron pastel de la cesta.\nCaperucita Roja dijo: «¡Gracias, querido cazador!»\nLa abuela dijo: «Nos has salvado.»\nTodos rieron y celebraron. El lobo malo se había ido y todos estaban\nnuevamente felices.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

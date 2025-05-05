@@ -1,0 +1,36 @@
+{
+    "name": "The Tortoise and the Hare",
+    "slug": "the-tortoise-and-the-hare",
+    "pages": [
+      {
+        "title": "Fast Hare!",
+        "text": "A speedy hare loved to run fast. He would laugh at the slow tortoise. \"You're so slow!\" the hare would say. The tortoise was quiet, but he had an idea.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Race Time!",
+        "text": "The tortoise said, \"Let's have a race!\" The hare giggled. \"A race with you? Okay!\" All the animals came to watch them.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "Hare Runs Far Ahead",
+        "text": "The race started. Zoom! The hare ran super fast. He was way ahead of the tortoise. He stopped under a tree. \"The tortoise is so slow,\" he thought. \"I'll take a little nap.\"",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "Nap Time for Hare",
+        "text": "The hare fell asleep under the tree. Zzzzz! The tortoise kept walking slowly but surely. He didn't stop. He just kept going.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "Tortoise Keeps Going",
+        "text": "The sun went down. The hare woke up! He looked around. Oh no! He saw the tortoise was near the finish line! The hare ran as fast as he could!",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "Slow and Steady!",
+        "text": "The tortoise crossed the finish line! The animals cheered. The hare was sad. The tortoise smiled. \"Slow and steady wins the race!\" he said. The hare learned a good lesson.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

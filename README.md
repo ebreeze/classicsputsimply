@@ -27,8 +27,11 @@ This guide will help you get the backend REST API up and running.
     ```bash
     ./gradlew build
     ```
-
     This command will download dependencies and build the Spring Boot application JAR file.
+    Clean build & refresh:
+    ```bash
+    ./gradlew --refresh-dependencies clean build
+    ```
 
 2.  **Build the JAR File:**
     After a successful build, create the bootable JAR file using the following Gradle task:
@@ -70,6 +73,26 @@ Once the application is running, you can test the following endpoints:
 
 For a more interactive way to explore and test the API endpoints, you can access the Swagger UI:
 http://localhost:8080/swagger-ui/index.html
+
+### API Docs
+
+http://localhost:8080/api-docs
+
+### Actuator
+Endpoints
+http://localhost:8080/actuator/health: Shows the health status of your application (e.g., UP, DOWN).
+http://localhost:8080/actuator/info: Displays general information about your application (you can customize this).
+http://localhost:8080/actuator/metrics: Provides various metrics about your application's performance (e.g., memory usage, CPU usage, HTTP request counts). You can often drill down to specific metrics by appending their name (e.g., /actuator/metrics/jvm.memory.used).
+http://localhost:8080/actuator/loggers: Allows you to view and modify the logging levels of your application at runtime.
+http://localhost:8080/actuator/threaddump: Provides a snapshot of the threads in your application.
+http://localhost:8080/actuator/heapdump: Generates a heap dump of your application (can be large).
+http://localhost:8080/actuator/env: Shows the application's environment properties.
+http://localhost:8080/actuator/configprops: Displays the application's configuration properties.
+
+Configutation in application.properties e.g. for specific endpoints:
+management.endpoints.web.exposure.include=health,info,metrics
+or for all:
+management.endpoints.web.exposure.include=*
 
 ### Run Tests
 

@@ -1,9 +1,36 @@
 {
-  "id": "lg001",
   "name": "König Artus",
-  "slug": "king-artur",
+  "slug": "king-arthur",
   "pages": [
-    { "title": "", "text": "In ferner Zeit...", "imageUrl": "/images/king-artur/page1.jpg" },
-    { "title": "", "text": "Er zog das Schwert...", "imageUrl": "/images/king-artur/page2.jpg" }
+    {
+      "title": "Das Schwert im Stein",
+      "text": "Vor vielen Jahren gab es in Britannien keinen König. Das Land war gespalten, und viele Lords kämpften um die Macht. Eines Tages erschien ein magisches Schwert, das in einen Stein eingelassen war. Eine Inschrift lautete: 'Wer dieses Schwert aus diesem Stein zieht, ist der rechtmäßige König von England.' Viele versuchten es, aber niemand konnte es schaffen.",
+      "imageUrl": "page1.png"
+    },
+    {
+      "title": "Artus zieht das Schwert",
+      "text": "Ein junger Knabe namens Artus reiste mit Sir Ector und dessen Sohn Kay zu einem Turnier in London. Kays Schwert war zurückgelassen worden, und Artus ging, um eines zu finden. Er stieß auf das Schwert im Stein und zog es, ohne seine Bedeutung zu kennen, leicht heraus. Er brachte es Kay, der seine Macht erkannte.",
+      "imageUrl": "page2.png"
+    },
+    {
+      "title": "Artus, der rechtmäßige König",
+      "text": "Als die Lords Artus mit dem Schwert sahen, waren sie erstaunt. Der Erzbischof versammelte sie, und Artus bewies sein Recht auf den Thron, indem er das Schwert vor aller Augen erneut aus dem Stein zog. Er wurde zum König von England gekrönt.",
+      "imageUrl": "page3.png"
+    },
+    {
+      "title": "Die Tafelrunde",
+      "text": "König Artus, ein weiser und gerechter Herrscher, versammelte edle Ritter, um ihm zu dienen. Er schuf die Tafelrunde, an der alle Ritter gleich waren und zusammensitzen würden, um wichtige Angelegenheiten zu besprechen und ihre Abenteuer zu planen.",
+      "imageUrl": "page4.png"
+    },
+    {
+      "title": "Merlins Führung",
+      "text": "Der weise Zauberer Merlin war Artus' Berater. Er führte den jungen König mit seiner Magie und seinem Wissen und half ihm, weise Entscheidungen zu treffen und sein Königreich zu schützen.",
+      "imageUrl": "page5.png"
+    },
+    {
+      "title": "Die Abenteuer beginnen",
+      "text": "Und so begann die Herrschaft von König Artus und seinen Rittern der Tafelrunde. Sie begaben sich auf viele tapfere Abenteuer, bekämpften das Böse, halfen den Schwachen und brachten Gerechtigkeit ins Land. Die Geschichten ihres Mutes und ihrer Ritterlichkeit verbreiteten sich im ganzen Königreich.",
+      "imageUrl": "page6.png"
+    }
   ]
 }

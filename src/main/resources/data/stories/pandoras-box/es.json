@@ -1,0 +1,36 @@
+{
+    "name": "La Caja de Pandora",
+    "slug": "pandoras-box",
+    "pages": [
+      {
+        "title": "La Creación de Pandora",
+        "text": "Hace mucho tiempo, después de que Prometeo robara el fuego de los dioses para la humanidad, Zeus, el rey de los dioses, estaba furioso. Como venganza, ordenó a Hefesto, el dios de los herreros, que creara una hermosa mujer llamada Pandora. Los otros dioses le otorgaron varios dones: belleza, encanto, curiosidad y un discurso persuasivo.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "La Jarra Misteriosa",
+        "text": "Zeus presentó a Pandora a Epimeteo, el hermano de Prometeo, como un regalo. A pesar de las advertencias de Prometeo de no aceptar regalos de los dioses, Epimeteo quedó cautivado por su belleza y la tomó como esposa. Pandora trajo consigo una hermosa jarra sellada (a veces representada como una caja).",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "La Curiosidad de Pandora",
+        "text": "Pandora estaba llena de una gran curiosidad sobre lo que contenía la jarra. Se preguntaba acerca de sus secretos y anhelaba abrirla. Durante un tiempo, resistió el impulso, pero su curiosidad crecía cada día.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "La Apertura de la Jarra",
+        "text": "Finalmente, Pandora no pudo resistirse más. Levantó la tapa de la jarra y, de repente, una nube oscura de criaturas aladas salió en enjambre. Estos eran todos los males y miserias que azotan a la humanidad: enfermedad, vejez, envidia, codicia y tristeza.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "La Esperanza Permanece",
+        "text": "Pandora cerró rápidamente la tapa, atrapando una última cosa dentro de la jarra. Esta era la Esperanza. Y así, aunque el mundo ahora estaba lleno de sufrimiento, la humanidad todavía tenía esperanza para soportar las dificultades.",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "El Legado de la Caja",
+        "text": "La leyenda de la Caja de Pandora sirve como una advertencia sobre los peligros de la curiosidad desenfrenada y la liberación del mal en el mundo. Sin embargo, también nos recuerda el poder duradero de la esperanza frente a la adversidad.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

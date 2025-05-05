@@ -1,0 +1,36 @@
+{
+    "name": "Die Büchse der Pandora",
+    "slug": "pandoras-box",
+    "pages": [
+      {
+        "title": "Die Erschaffung der Pandora",
+        "text": "Vor langer Zeit, nachdem Prometheus den Göttern das Feuer für die Menschheit gestohlen hatte, war Zeus, der König der Götter, wütend. Zur Rache befahl er Hephaistos, dem Gott der Schmiede, eine wunderschöne Frau namens Pandora zu erschaffen. Die anderen Götter verliehen ihr verschiedene Gaben: Schönheit, Charme, Neugier und überzeugende Rede.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Das geheimnisvolle Gefäß",
+        "text": "Zeus präsentierte Pandora Epimetheus, dem Bruder des Prometheus, als Geschenk. Trotz der Warnungen des Prometheus, keine Geschenke von den Göttern anzunehmen, war Epimetheus von ihrer Schönheit gefesselt und nahm sie zur Frau. Pandora brachte ein wunderschönes, versiegeltes Gefäß mit (manchmal als Büchse dargestellt).",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "Pandoras Neugier",
+        "text": "Pandora war von großer Neugier erfüllt, was das Gefäß enthielt. Sie fragte sich nach seinen Geheimnissen und sehnte sich danach, es zu öffnen. Eine Zeit lang widerstand sie dem Drang, aber ihre Neugier wuchs mit jedem Tag.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "Das Öffnen des Gefäßes",
+        "text": "Schließlich konnte Pandora nicht länger widerstehen. Sie hob den Deckel des Gefäßes, und plötzlich schwärmte eine dunkle Wolke geflügelter Kreaturen heraus. Das waren all die Übel und Leiden, die die Menschheit plagen: Krankheit, Alter, Neid, Gier und Kummer.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "Die Hoffnung bleibt",
+        "text": "Pandora schlug schnell den Deckel zu und sperrte das Letzte im Gefäß ein. Das war die Hoffnung. Und so, obwohl die Welt nun voller Leid war, hatte die Menschheit immer noch Hoffnung, die Schwierigkeiten zu ertragen.",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "Das Erbe der Büchse",
+        "text": "Die Legende von der Büchse der Pandora dient als warnendes Beispiel für die Gefahren ungezügelter Neugier und die Freisetzung des Bösen in die Welt. Sie erinnert uns aber auch an die bleibende Kraft der Hoffnung angesichts von Widrigkeiten.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

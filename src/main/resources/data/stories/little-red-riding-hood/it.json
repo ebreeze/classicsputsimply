@@ -1,0 +1,36 @@
+{
+    "name": "Cappuccetto Rosso",
+    "slug": "little-red-riding-hood",
+    "pages": [
+      {
+        "title": "L'avvertimento della madre",
+        "text": "Cappuccetto Rosso viveva con la sua mamma in una casa vicino al bosco.\nLa sua mamma diede a Cappuccetto Rosso un cestino con una torta e\ndel succo. Le disse: «Per favore, vai dalla nonna. È malata. Non allontanarti\ndal sentiero. Stai attenta!» Cappuccetto Rosso disse: «Sì, mamma!» e si incamminò.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Cappuccetto Rosso incontra il lupo",
+        "text": "Nel bosco, Cappuccetto Rosso incontrò il lupo. Il lupo disse: «Dove\nstai andando?» Cappuccetto Rosso disse: «Dalla mia nonna. È malata.»\nIl lupo disse: «Dove abita?» Cappuccetto Rosso disse: «Nella casa\ndietro gli alberi.»\nIl lupo pensò: «Voglio essere lì per primo!» Corse velocemente\nverso la casa della nonna.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "Il lupo mangia la nonna",
+        "text": "Il lupo arrivò alla casa della nonna. Bussò alla porta.\nLa nonna disse: «Chi è?»\nIl lupo disse: «Sono Cappuccetto Rosso.»\nLa nonna aprì la porta. Il lupo le saltò addosso e\nse la mangiò. Poi si mise gli occhiali e la cuffia. Si sdraiò\nnell'letto.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "Cappuccetto Rosso arriva alla casa",
+        "text": "Cappuccetto Rosso arrivò e disse: «Buongiorno, nonna.» Il lupo\ndisse con voce dolce: «Buongiorno, bambina mia.»\nCappuccetto Rosso fu sorpresa. Disse: «Nonna, perché hai degli occhi così\ngrandi?» Il lupo disse: «Per vederti meglio.»\nCappuccetto Rosso continuò: «Perché hai dei denti così\ngrandi?» Il lupo disse: «Per mangiarti meglio!»\nE poi mangiò anche Cappuccetto Rosso.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "Il cacciatore trova il lupo",
+        "text": "Un cacciatore passava vicino alla casa. Sentì un forte russare.\nEntrò nella casa e vide il lupo nel letto con una grossa\npancia.\nIl cacciatore disse: «Il lupo ha mangiato la nonna!» Prese\nle sue forbici e aprì la pancia del lupo.\nCappuccetto Rosso e la nonna uscirono. Erano vive!",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "La festa",
+        "text": "Cappuccetto Rosso, la nonna e il cacciatore erano felici. Bevvero\ndel succo e mangiarono la torta dal cestino.\nCappuccetto Rosso disse: «Grazie, caro cacciatore!»\nLa nonna disse: «Ci hai salvato.»\nTutti risero e festeggiarono. Il lupo cattivo era sparito e tutti erano\ndi nuovo felici.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

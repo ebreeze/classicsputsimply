@@ -1,0 +1,36 @@
+{
+    "name": "La Boîte de Pandore",
+    "slug": "pandoras-box",
+    "pages": [
+      {
+        "title": "La Création de Pandore",
+        "text": "Il y a longtemps, après que Prométhée eut volé le feu aux dieux pour l'humanité, Zeus, le roi des dieux, fut furieux. En guise de vengeance, il ordonna à Héphaïstos, le dieu des forgerons, de créer une belle femme nommée Pandore. Les autres dieux lui accordèrent divers dons : la beauté, le charme, la curiosité et un discours persuasif.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Le Vase Mystérieux",
+        "text": "Zeus présenta Pandore à Épiméthée, le frère de Prométhée, comme un cadeau. Malgré les avertissements de Prométhée de ne pas accepter de cadeaux des dieux, Épiméthée fut captivé par sa beauté et la prit pour épouse. Pandore apporta avec elle un beau vase scellé (parfois représenté comme une boîte).",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "La Curiosité de Pandore",
+        "text": "Pandore était remplie d'une grande curiosité quant au contenu du vase. Elle s'interrogeait sur ses secrets et désirait ardemment l'ouvrir. Pendant un certain temps, elle résista à l'envie, mais sa curiosité grandissait chaque jour.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "L'Ouverture du Vase",
+        "text": "Finalement, Pandore ne put plus résister. Elle souleva le couvercle du vase, et soudain, un nuage sombre de créatures ailées s'en échappa. C'étaient tous les maux et les misères qui affligent l'humanité : la maladie, la vieillesse, l'envie, la cupidité et le chagrin.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "L'Espoir Demeure",
+        "text": "Pandore referma rapidement le couvercle, piégeant une dernière chose à l'intérieur du vase. C'était l'Espoir. Et ainsi, bien que le monde fût désormais rempli de souffrance, l'humanité conservait l'espoir d'endurer les épreuves.",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "L'Héritage de la Boîte",
+        "text": "La légende de la boîte de Pandore sert de conte moralisateur sur les dangers d'une curiosité incontrôlée et de la libération du mal dans le monde. Cependant, elle nous rappelle également le pouvoir durable de l'espoir face à l'adversité.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

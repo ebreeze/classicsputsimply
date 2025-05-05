@@ -2,6 +2,7 @@ package com.viannele.classicsputsimply.integration_tests;
 
 import com.viannele.classicsputsimply.model.Classic;
 import com.viannele.classicsputsimply.service.ClassicsService;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

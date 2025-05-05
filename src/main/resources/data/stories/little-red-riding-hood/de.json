@@ -3,7 +3,35 @@
   "name": "Rotkäppchen",
   "slug": "little-red-riding-hood",
   "pages": [
-    { "title": "", "text": "Es war einmal...", "imageUrl": "/images/little-red-riding-hood/page1.jpg" },
-    { "title": "", "text": "Sie lebte bei ihrer Mutter...", "imageUrl": "/images/little-red-riding-hood/page2.jpg" }
+    {
+      "title": "Die Warnung der Mutter",
+      "text": "Rotkäppchen wohnt mit ihrer Mutter in einem Haus neben dem Wald.\nDie Mutter gibt Rotkäppchen einen Korb mit Kuchen und\nSaft. Sie sagt: „Geh bitte zu deiner Oma. Sie ist krank. Geh nicht\nvom Weg ab. Sei vorsichtig!“ Rotkäppchen sagt: „Ja, Mama!“ und geht los.",
+      "imageUrl": "page1.png"
+    },
+    {
+      "title": "Rotkäppchen trifft den Wolf",
+      "text": "Im Wald trifft Rotkäppchen den Wolf. Der Wolf sagt: „Wohin gehst du?“ Rotkäppchen sagt: „Zur Großmutter. Sie ist krank.“\nDer Wolf sagt: „Wo wohnt sie?“ Rotkäppchen sagt: „Im Haus\nhinter den Bäumen.“\nDer Wolf denkt: „Ich will zuerst dort sein!“ Er läuft schnell\nzur Großmutter.",
+      "imageUrl": "page2.png"
+    },
+    {
+      "title": "Der Wolf frisst die Oma",
+      "text": "Der Wolf kommt zum Haus von der Oma. Er klopft an die Tür. \nDie Oma sagt: „Wer ist da?“\nDer Wolf sagt: „Ich bin Rotkäppchen.“\nDie Oma öffnet die Tür. Der Wolf springt auf sie drauf und\nfrisst sie. Dann zieht er ihre Brille und ihre Mütze an. Er legt sich\nins Bett.",
+      "imageUrl": "page3.png"
+    },
+    {
+      "title": "Rotkäppchen kommt ins Haus",
+      "text": "Rotkäppchen kommt und sagt „Guten Tag, Oma.“. Der Wolf\nsagt mit leiser Stimme: „Guten Tag, mein Kind.“\nRotkäppchen wundert sich. Sie sagt: „Oma, warum hast du so\ngroße Augen?“ Der Wolf sagt: „Damit ich dich besser sehen\nkann.“ Rotkäppchen fragt weiter: „Warum hast du so große\nZähne?“ Der Wolf sagt: „Damit ich dich besser fressen kann!“\nUnd dann frisst er Rotkäppchen auch.",
+      "imageUrl": "page4.png"
+    },
+    {
+      "title": "Der Jäger findet den Wolf",
+      "text": "Ein Jäger geht am Haus vorbei. Er hört ein lautes Schnarchen.\nEr geht ins Haus und sieht den Wolf im Bett mit einem dicken\nBauch.\nDer Jäger sagt: „Der Wolf hat die Großmutter gefressen!“ Er\nnimmt seine Schere und schneidet den Bauch vom Wolf auf.\nRotkäppchen und die Großmutter kommen heraus. Sie leben!",
+      "imageUrl": "page5.png"
+    },
+    {
+      "title": "Das Feiern",
+      "text": "Rotkäppchen, die Großmutter und der Jäger sind froh. Sie\ntrinken Saft und essen Kuchen aus dem Korb.\nRotkäppchen sagt: „Danke, lieber Jäger!“\nDie Großmutter sagt: „Du hast uns gerettet.“\nAlle lachen und feiern. Der böse Wolf ist weg, und alle sind\nwieder glücklich.",
+      "imageUrl": "page6.png"
+    }
   ]
 }

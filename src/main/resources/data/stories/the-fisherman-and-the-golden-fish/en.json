@@ -1,0 +1,36 @@
+{
+    "name": "The Fisherman and the Golden Fish",
+    "slug": "the-fisherman-and-the-golden-fish",
+    "pages": [
+        {
+          "title": "The Discovery",
+          "text": "An old fisherman and his wife lived in poverty by the sea. One day, the old man caught a golden fish that could speak! Begging for its life, the fish promised to grant any wish in exchange for freedom. The startled fisherman released it without asking for anything.",
+          "imageUrl": "page1.png"
+        },
+        {
+          "title": "The First Demands",
+          "text": "Returning home, the old man told his wife about the miracle. She scolded him for his foolishness and demanded he return to the fish and ask for a new trough, as theirs was broken. The old man reluctantly went back, and the golden fish granted their first wish.",
+          "imageUrl": "page2.png"
+        },
+        {
+          "title": "Rising Ambition",
+          "text": "But the wife's desires didn't stop there. Soon, she found the new trough insufficient and insisted her husband ask the golden fish for a new house. Again, the old man obeyed, and their humble dwelling was replaced with a fine house.",
+          "imageUrl": "page3.png"
+        },
+        {
+          "title": "Titles and Power",
+          "text": "Growing ever more ambitious, the old woman demanded to become a noblewoman. The patient golden fish fulfilled this wish as well, and she lived in grandeur with servants. Yet, her discontent continued to fester.",
+          "imageUrl": "page4.png"
+        },
+        {
+          "title": "The Quest for Royalty",
+          "text": "Next, the insatiable wife ordered her husband to ask the golden fish to make her the Queen. Despite the stormy sea reflecting her growing greed, the fish once more granted her wish, and she became a powerful ruler.",
+          "imageUrl": "page5.png"
+        },
+        {
+          "title": "The Fall",
+          "text": "Finally, in her ultimate act of greed, the old woman demanded to become the ruler of the sea itself, commanding the golden fish to be her servant. The sea raged in fury. When the old man returned home, the palace was gone, and they were back in their old dugout with the broken trough, having lost everything.",
+          "imageUrl": "page6.png"
+        }
+      ]
+  }

@@ -1,0 +1,36 @@
+{
+    "name": "Re Artù",
+    "slug": "king-arthur",
+    "pages": [
+      {
+        "title": "La Spada nella Roccia",
+        "text": "Molti anni fa, in Britannia, non c'era un re. La terra era divisa e molti signori combattevano per il potere. Un giorno, apparve una spada magica, incastonata in una pietra. Un'iscrizione diceva: 'Chiunque estrarrà questa spada da questa pietra sarà il legittimo re d'Inghilterra.' Molti provarono, ma nessuno ci riuscì.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Artù estrae la spada",
+        "text": "Un giovane ragazzo di nome Artù stava viaggiando con Sir Ector e suo figlio Kay a un torneo a Londra. La spada di Kay era stata dimenticata e Artù andò a cercarne una. Si imbatté nella spada nella roccia e, senza conoscerne il significato, la estrasse facilmente. La portò a Kay, che ne comprese il potere.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "Artù, il re legittimo",
+        "text": "Quando i signori videro Artù con la spada, rimasero sbalorditi. L'Arcivescovo li riunì e Artù dimostrò il suo diritto al trono estraendo di nuovo la spada dalla roccia davanti a tutti. Fu incoronato re d'Inghilterra.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "La Tavola Rotonda",
+        "text": "Re Artù, un sovrano saggio e giusto, radunò nobili cavalieri al suo servizio. Creò la Tavola Rotonda, dove tutti i cavalieri erano uguali e si sarebbero seduti insieme per discutere questioni importanti e pianificare le loro imprese.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "La guida di Merlino",
+        "text": "Il saggio mago Merlino era il consigliere di Artù. Guidò il giovane re con la sua magia e la sua conoscenza, aiutandolo a prendere decisioni sagge e a proteggere il suo regno.",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "Le avventure iniziano",
+        "text": "E così iniziò il regno di Re Artù e dei suoi Cavalieri della Tavola Rotonda. Si imbarcarono in molte coraggiose avventure, combattendo il male, aiutando i deboli e portando giustizia nella terra. Le storie del loro coraggio e della loro cavalleria si diffusero in tutto il regno.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

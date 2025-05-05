@@ -10,6 +10,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -44,6 +45,7 @@ public class ClassicsControllerTest {
     private ClassicsService classicsService; // Inject the mocked bean
 
     @Test
+    @WithMockUser
     void getAllClassics_returnsOkAndListOfClassics() throws Exception {
 
         Map<String, String> titles1 = new HashMap<>();
@@ -67,6 +69,7 @@ public class ClassicsControllerTest {
     }
 
     @Test
+    @WithMockUser
     void getAllClassics_withLangParam_returnsTranslatedTitles() throws Exception {
         Map<String, String> titles1 = new HashMap<>();
         titles1.put("en", "Little Red Riding Hood");
@@ -86,6 +89,7 @@ public class ClassicsControllerTest {
     }
 
     @Test
+    @WithMockUser
     void getAllClassics_serviceThrowsException_returnsInternalServerError() throws Exception {
         when(classicsService.getAllClassics(Mockito.anyString())).thenThrow(new IOException("Failed to read data"));
 
@@ -95,6 +99,7 @@ public class ClassicsControllerTest {
     }
 
     @Test
+    @WithMockUser
     void getClassicContentBySlug_returnsOkAndClassic() throws Exception {
         Classic classic = new Classic("first_id", "Little Red Riding Hood", "little-red-riding-hood", Collections.emptyMap());
         when(classicsService.getClassicContentBySlug("little-red-riding-hood", "en")).thenReturn(classic);
@@ -107,6 +112,7 @@ public class ClassicsControllerTest {
     }
 
     @Test
+    @WithMockUser
     void getClassicContentBySlug_storyNotFound_returnsNotFound() throws Exception {
         when(classicsService.getClassicContentBySlug("non-existent-slug", "en")).thenReturn(null);
 
@@ -116,6 +122,7 @@ public class ClassicsControllerTest {
     }
 
     @Test
+    @WithMockUser
     void getClassicContentBySlug_serviceThrowsException_returnsInternalServerError() throws Exception {
         when(classicsService.getClassicContentBySlug(Mockito.anyString(), Mockito.anyString()))
                 .thenThrow(new IOException("Failed to read story"));
