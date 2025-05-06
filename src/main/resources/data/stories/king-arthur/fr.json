@@ -1,0 +1,36 @@
+{
+    "name": "Le Roi Arthur",
+    "slug": "king-arthur",
+    "pages": [
+      {
+        "title": "L'épée dans le rocher",
+        "text": "Il y a de nombreuses années, en Bretagne, il n'y avait pas de roi. Le pays était divisé, et de nombreux seigneurs se battaient pour le pouvoir. Un jour, une épée magique apparut, enchâssée dans une pierre. Une inscription disait : 'Celui qui tirera cette épée de cette pierre sera le roi légitime d'Angleterre.' Beaucoup essayèrent, mais aucun ne réussit.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Arthur tire l'épée",
+        "text": "Un jeune garçon nommé Arthur voyageait avec Sire Ector et son fils Kay à un tournoi à Londres. L'épée de Kay avait été oubliée, et Arthur partit en chercher une. Il tomba sur l'épée dans le rocher et, sans connaître sa signification, la tira facilement. Il l'apporta à Kay, qui réalisa son pouvoir.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "Arthur, le roi légitime",
+        "text": "Quand les seigneurs virent Arthur avec l'épée, ils furent stupéfaits. L'archevêque les rassembla, et Arthur prouva son droit au trône en retirant à nouveau l'épée du rocher devant tout le monde. Il fut couronné roi d'Angleterre.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "La Table Ronde",
+        "text": "Le roi Arthur, un souverain sage et juste, rassembla de nobles chevaliers pour le servir. Il créa la Table Ronde, où tous les chevaliers étaient égaux et s'asseyaient ensemble pour discuter des affaires importantes et planifier leurs quêtes.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "Les conseils de Merlin",
+        "text": "Le sage magicien Merlin était le conseiller d'Arthur. Il guida le jeune roi avec sa magie et sa connaissance, l'aidant à prendre des décisions sages et à protéger son royaume.",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "Les aventures commencent",
+        "text": "Et ainsi commença le règne du roi Arthur et de ses chevaliers de la Table Ronde. Ils se lancèrent dans de nombreuses aventures courageuses, combattant le mal, aidant les faibles et apportant la justice au pays. Les récits de leur courage et de leur chevalerie se répandirent dans tout le royaume.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

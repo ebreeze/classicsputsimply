@@ -1,0 +1,36 @@
+{
+  "name": "Der Hase und der Igel",
+  "slug": "the-tortoise-and-the-hare",
+  "pages": [
+    {
+      "title": "Schneller Hase!",
+      "text": "Ein schneller Hase liebte es, schnell zu rennen. Er lachte über die langsame Schildkröte. \"Du bist so langsam!\" sagte der Hase. Die Schildkröte war still, aber sie hatte eine Idee.",
+      "imageUrl": "page1.png"
+    },
+    {
+      "title": "Rennzeit!",
+      "text": "Die Schildkröte sagte: \"Lass uns ein Rennen machen!\" Der Hase kicherte. \"Ein Rennen mit dir? Okay!\" Alle Tiere kamen, um zuzusehen.",
+      "imageUrl": "page2.png"
+    },
+    {
+      "title": "Hase rennt weit voraus",
+      "text": "Das Rennen begann. Schwupp! Der Hase rannte super schnell. Er war weit vor der Schildkröte. Er hielt unter einem Baum an. \"Die Schildkröte ist so langsam\", dachte er. \"Ich mache ein kleines Nickerchen.\"",
+      "imageUrl": "page3.png"
+    },
+    {
+      "title": "Nickerchen für den Hasen",
+      "text": "Der Hase schlief unter dem Baum ein. Zzzzz! Die Schildkröte ging langsam, aber sicher weiter. Sie hielt nicht an. Sie ging einfach weiter.",
+      "imageUrl": "page4.png"
+    },
+    {
+      "title": "Schildkröte geht weiter",
+      "text": "Die Sonne ging unter. Der Hase wachte auf! Er sah sich um. Oh nein! Er sah, dass die Schildkröte in der Nähe der Ziellinie war! Der Hase rannte so schnell er konnte!",
+      "imageUrl": "page5.png"
+    },
+    {
+      "title": "Langsam und stetig!",
+      "text": "Die Schildkröte überquerte die Ziellinie! Die Tiere jubelten. Der Hase war traurig. Die Schildkröte lächelte. \"Langsam und stetig gewinnt das Rennen!\" sagte sie. Der Hase lernte eine gute Lektion.",
+      "imageUrl": "page6.png"
+    }
+  ]
+}

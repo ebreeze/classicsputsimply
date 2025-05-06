@@ -1,0 +1,36 @@
+{
+    "name": "La Lepre e la Tartaruga",
+    "slug": "the-tortoise-and-the-hare",
+    "pages": [
+      {
+        "title": "Lepre Veloce!",
+        "text": "Una lepre veloce amava correre rapida. Rideva della tartaruga lenta. \"Sei così lenta!\" diceva la lepre. La tartaruga era silenziosa, ma aveva un'idea.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Tempo di Gara!",
+        "text": "La tartaruga disse: \"Facciamo una gara!\" La lepre ridacchiò. \"Una gara con te? Okay!\" Tutti gli animali vennero a guardarli.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "La Lepre Corre Molto Avanti",
+        "text": "La gara iniziò. Zoom! La lepre corse super veloce. Era molto avanti alla tartaruga. Si fermò sotto un albero. \"La tartaruga è così lenta,\" pensò. \"Farò un piccolo pisolino.\"",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "Tempo di Pisolino per la Lepre",
+        "text": "La lepre si addormentò sotto l'albero. Zzzzz! La tartaruga continuò a camminare lentamente ma sicuramente. Non si fermò. Continuò semplicemente.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "La Tartaruga Continua",
+        "text": "Il sole tramontò. La lepre si svegliò! Si guardò intorno. Oh no! Vide che la tartaruga era vicino al traguardo! La lepre corse più veloce che poteva!",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "Piano e Costante!",
+        "text": "La tartaruga tagliò il traguardo! Gli animali esultarono. La lepre era triste. La tartaruga sorrise. \"Chi va piano va sano e lontano!\" disse. La lepre imparò una buona lezione.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

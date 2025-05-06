@@ -1,10 +1,36 @@
 {
-  "id": "ft001",
   "name": "Little Red Riding Hood",
   "slug": "little-red-riding-hood",
   "pages": [
-    { "title": "", "text": "Once upon a time...", "imageUrl": "/images/little-red-riding-hood/page1.jpg" },
-    { "title": "", "text": "She lived with her mother...", "imageUrl": "/images/little-red-riding-hood/page2.jpg" }
+    {
+      "title": "The Mother's Warning",
+      "text": "Little Red Riding Hood lived with her mother in a house next to the forest.\nHer mother gave Little Red Riding Hood a basket with cake and juice. She said, \"Please go to your grandma. She is sick. Don't stray from the path. Be careful!\" Little Red Riding Hood said, \"Yes, Mom!\" and set off.",
+      "imageUrl": "page1.png"
+    },
+    {
+      "title": "Little Red Riding Hood Meets the Wolf",
+      "text": "In the forest, Little Red Riding Hood met the wolf. The wolf said, \"Where are you going?\" Little Red Riding Hood said, \"To my grandmother. She is sick.\"\nThe wolf said, \"Where does she live?\" Little Red Riding Hood said, \"In the house behind the trees.\"\nThe wolf thought, \"I want to be there first!\" He ran quickly to the grandmother's house.",
+      "imageUrl": "page2.png"
+    },
+    {
+      "title": "The Wolf Eats Grandma",
+      "text": "The wolf came to Grandma's house. He knocked on the door.\nGrandma said, \"Who's there?\"\nThe wolf said, \"It's Little Red Riding Hood.\"\nGrandma opened the door. The wolf jumped on her and ate her up. Then he put on her glasses and her cap. He lay down in bed.",
+      "imageUrl": "page3.png"
+    },
+    {
+      "title": "Little Red Riding Hood Comes to the House",
+      "text": "Little Red Riding Hood came and said, \"Good day, Grandma.\" The wolf said in a soft voice, \"Good day, my child.\"\nLittle Red Riding Hood was surprised. She said, \"Grandma, why do you have such big eyes?\" The wolf said, \"So that I can see you better.\"\nLittle Red Riding Hood continued, \"Why do you have such big teeth?\" The wolf said, \"So that I can eat!\"\nAnd then he ate Little Red Riding Hood too.",
+      "imageUrl": "page4.png"
+    },
+    {
+      "title": "The Hunter Finds the Wolf",
+      "text": "A hunter was passing by the house. He heard loud snoring.\nHe went into the house and saw the wolf in bed with a big belly.\nThe hunter said, \"The wolf has eaten Grandma!\" He took his scissors and cut open the wolf's belly.\nLittle Red Riding Hood and Grandma came out. They were alive!",
+      "imageUrl": "page5.png"
+    },
+    {
+      "title": "The Celebration",
+      "text": "Little Red Riding Hood, Grandma, and the hunter were happy. They drank juice and ate cake from the basket.\nLittle Red Riding Hood said, \"Thank you, dear hunter!\"\nGrandma said, \"You saved us.\"\nEveryone laughed and celebrated. The bad wolf was gone, and everyone was happy again.",
+      "imageUrl": "page6.png"
+    }
   ]
 }
-

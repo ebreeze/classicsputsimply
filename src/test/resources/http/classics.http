@@ -1,0 +1,11 @@
+### Get all classics
+GET http://localhost:8080/api/v1/classics
+
+### Get all classics with a specific language preference (e.g., German)
+GET http://localhost:8080/api/v1/classics?lang=de
+
+### Get content for a specific classic story by slug (English)
+GET http://localhost:8080/api/v1/classics/story/little-red-riding-hood
+
+### Get content for a specific classic story by slug with a specific language (e.g., German)
+GET http://localhost:8080/api/v1/classics/story/little-red-riding-hood?lang=de

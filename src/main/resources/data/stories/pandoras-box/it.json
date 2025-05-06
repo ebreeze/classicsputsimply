@@ -1,0 +1,36 @@
+{
+    "name": "Il Vaso di Pandora",
+    "slug": "pandoras-box",
+    "pages": [
+      {
+        "title": "La Creazione di Pandora",
+        "text": "Molto tempo fa, dopo che Prometeo rubò il fuoco agli dei per l'umanità, Zeus, il re degli dei, era furioso. Come vendetta, ordinò a Efesto, il dio dei fabbri, di creare una bellissima donna di nome Pandora. Gli altri dei le conferirono vari doni: bellezza, fascino, curiosità e un discorso persuasivo.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Il Vaso Misterioso",
+        "text": "Zeus presentò Pandora a Epimeteo, fratello di Prometeo, come un dono. Nonostante gli avvertimenti di Prometeo di non accettare doni dagli dei, Epimeteo fu catturato dalla sua bellezza e la prese come sua sposa. Pandora portò con sé un bellissimo vaso sigillato (a volte raffigurato come una scatola).",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "La Curiosità di Pandora",
+        "text": "Pandora era piena di grande curiosità su ciò che il vaso conteneva. Si interrogava sui suoi segreti e desiderava aprirlo. Per un certo periodo, resistette all'impulso, ma la sua curiosità cresceva ogni giorno.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "L'Apertura del Vaso",
+        "text": "Finalmente, Pandora non poté più resistere. Sollevò il coperchio del vaso e, all'improvviso, una nuvola oscura di creature alate si riversò fuori. Questi erano tutti i mali e le miserie che affliggono l'umanità: malattia, vecchiaia, invidia, avidità e dolore.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "La Speranza Rimane",
+        "text": "Pandora sbatté rapidamente il coperchio, intrappolando un'ultima cosa all'interno del vaso. Questa era la Speranza. E così, anche se il mondo era ora pieno di sofferenza, l'umanità aveva ancora la speranza di sopportare le difficoltà.",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "L'Eredità del Vaso",
+        "text": "La leggenda del vaso di Pandora serve come racconto ammonitore sui pericoli della curiosità sfrenata e sul rilascio del male nel mondo. Tuttavia, ci ricorda anche il potere duraturo della speranza di fronte alle avversità.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

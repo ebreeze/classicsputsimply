@@ -1,0 +1,129 @@
+
+{
+    "en": {
+      "appName": "Classics Put Simply",
+      "menu": {
+        "about": "About",
+        "stories": "Stories",
+        "impressum": "Impressum",
+        "language": "Language",
+        "english": "English",
+        "german": "German",
+        "french": "French"
+      },
+      "about": {
+        "title": "About Us",
+        "content": "This is some sample text for the About page in English."
+      },
+      "stories": {
+        "title": "Stories",
+        "loading": "Loading stories...",
+        "close": "Close Stories"
+      },
+      "story": {
+        "page": "Page",
+        "nextPage": "Next Page",
+        "readAnother": "Read Another Story"
+      },
+      "impressum": {
+        "title": "Impressum",
+        "content": "This is some sample text for the Impressum page in English."
+      },
+      "bottomNav": {
+        "faq": "FAQ",
+        "legal": "Legal Notices"
+      },
+      "home": {
+        "instruction": "Click on \"Stories\" to see the list and start reading."
+      },
+      "errors": {
+        "fetchClassics": "Failed to fetch classics.",
+        "fetchStoryContent": "Failed to fetch story content.",
+        "storyNotFound": "Story with slug \"{slug}\" not found in {lang}."
+      }
+    },
+    "de": {
+      "appName": "Klassiker einfach erzählt",
+      "menu": {
+        "about": "Über uns",
+        "stories": "Geschichten",
+        "impressum": "Impressum",
+        "language": "Sprache",
+        "english": "Englisch",
+        "german": "Deutsch",
+        "french": "Französisch"
+      },
+      "about": {
+        "title": "Über Uns",
+        "content": "Dies ist ein Beispieltext für die Über Uns Seite auf Deutsch."
+      },
+      "stories": {
+        "title": "Geschichten",
+        "loading": "Lade Geschichten...",
+        "close": "Geschichten schließen"
+      },
+      "story": {
+        "page": "Seite",
+        "nextPage": "Nächste Seite",
+        "readAnother": "Weitere Geschichte lesen"
+      },
+      "impressum": {
+        "title": "Impressum",
+        "content": "Dies ist ein Beispieltext für die Impressum Seite auf Deutsch."
+      },
+      "bottomNav": {
+        "faq": "FAQ",
+        "legal": "Legal Notices"
+      },
+      "home": {
+        "instruction": "Klicke auf \"Geschichten\", um die Liste anzuzeigen und mit dem Lesen zu beginnen."
+      },
+      "errors": {
+        "fetchClassics": "Fehler beim Laden der Klassiker.",
+        "fetchStoryContent": "Fehler beim Laden des Geschichtsinhalts.",
+        "storyNotFound": "Geschichte mit dem Slug \"{slug}\" in {lang} nicht gefunden."
+      }
+    },
+    "fr": {
+      "appName": "Les Classiques Simplement",
+      "menu": {
+        "about": "À Propos",
+        "stories": "Histoires",
+        "impressum": "Mentions Légales",
+        "language": "Langue",
+        "english": "Anglais",
+        "german": "Allemand",
+        "french": "Français"
+      },
+      "about": {
+        "title": "À Propos de Nous",
+        "content": "Ceci est un exemple de texte pour la page À Propos en français."
+      },
+      "stories": {
+        "title": "Histoires",
+        "loading": "Chargement des histoires...",
+        "close": "Fermer les histoires"
+      },
+      "story": {
+        "page": "Page",
+        "nextPage": "Page Suivante",
+        "readAnother": "Lire une autre histoire"
+      },
+      "impressum": {
+        "title": "Mentions Légales",
+        "content": "Ceci est un exemple de texte pour la page Mentions Légales en français."
+      },
+      "bottomNav": {
+        "faq": "FAQ",
+        "legal": "Legal Notices"
+      },
+      "home": {
+        "instruction": "Cliquez sur \"Histoires\" pour voir la liste et commencer à lire."
+      },
+      "errors": {
+        "fetchClassics": "Échec du chargement des classiques.",
+        "fetchStoryContent": "Échec du chargement du contenu de l'histoire.",
+        "storyNotFound": "Histoire avec le slug \"{slug}\" introuvable en {lang}."
+      }
+    }
+  }

@@ -1,0 +1,36 @@
+{
+    "name": "Capuchinho Vermelho",
+    "slug": "little-red-riding-hood",
+    "pages": [
+      {
+        "title": "O aviso da mãe",
+        "text": "O Capuchinho Vermelho morava com a mãe numa casa perto da floresta.\nA mãe deu ao Capuchinho Vermelho uma cesta com bolo e\nsumo. Ela disse: «Por favor, vai ter com a tua avó. Ela está doente. Não te desvies\ndo caminho. Tem cuidado!» O Capuchinho Vermelho disse: «Sim, mãe!» e pôs-se a caminho.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "O Capuchinho Vermelho encontra o lobo",
+        "text": "Na floresta, o Capuchinho Vermelho encontrou o lobo. O lobo disse: «Onde\nvais?» O Capuchinho Vermelho disse: «À casa da minha avó. Ela está doente.»\nO lobo disse: «Onde é que ela mora?» O Capuchinho Vermelho disse: «Na casa\natrás das árvores.»\nO lobo pensou: «Quero ser o primeiro a chegar lá!» Correu rapidamente\npara a casa da avó.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "O lobo come a avó",
+        "text": "O lobo chegou à casa da avó. Bateu à porta.\nA avó disse: «Quem está aí?»\nO lobo disse: «Sou o Capuchinho Vermelho.»\nA avó abriu a porta. O lobo saltou em cima dela e\ncomeu-a. Depois pôs os óculos e a touca dela. Deitou-se\nna cama.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "O Capuchinho Vermelho chega à casa",
+        "text": "O Capuchinho Vermelho chegou e disse: «Bom dia, avó.» O lobo\ndisse com uma voz suave: «Bom dia, minha querida.»\nO Capuchinho Vermelho ficou surpreendido. Ela disse: «Avó, por que é que tem uns olhos tão\ngrandes?» O lobo disse: «Para te ver melhor.»\nO Capuchinho Vermelho continuou: «Por que é que tem uns dentes tão\ngrandes?» O lobo disse: «Para te comer melhor!»\nE depois comeu também o Capuchinho Vermelho.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "O caçador encontra o lobo",
+        "text": "Um caçador estava a passar perto da casa. Ele ouviu um ronco alto.\nEntrou na casa e viu o lobo na cama com uma grande\nbarriga.\nO caçador disse: «O lobo comeu a avó!» Ele\npegou nas tesouras e abriu a barriga do lobo.\nO Capuchinho Vermelho e a avó saíram. Estavam vivas!",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "A celebração",
+        "text": "O Capuchinho Vermelho, a avó e o caçador estavam felizes. Eles\nbeberam sumo e comeram bolo da cesta.\nO Capuchinho Vermelho disse: «Obrigado, querido caçador!»\nA avó disse: «Salvaste-nos.»\nToda a gente riu e celebrou. O lobo mau tinha ido embora e toda a gente estava\nfeliz novamente.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

@@ -1,0 +1,36 @@
+{
+    "name": "Le pêcheur et le poisson d'or",
+    "slug": "the-fisherman-and-the-golden-fish",
+    "pages": [
+      {
+        "title": "La découverte",
+        "text": "Il était une fois un vieux pêcheur et sa femme qui vivaient pauvrement au bord de la mer. Un jour, le vieil homme attrapa un poisson doré qui pouvait parler ! Suppliant pour sa vie, le poisson promit d'exaucer n'importe quel vœu en échange de sa liberté. Le pêcheur surpris le relâcha sans rien demander.",
+        "imageUrl": "page1.png"
+      },
+      {
+        "title": "Les premières demandes",
+        "text": "De retour à la maison, le vieil homme raconta le miracle à sa femme. Elle le gronda pour sa sottise et exigea qu'il retourne auprès du poisson et demande une nouvelle auge, car la leur était cassée. Le vieil homme y retourna à contrecœur, et le poisson doré exauça leur premier vœu.",
+        "imageUrl": "page2.png"
+      },
+      {
+        "title": "Ambition croissante",
+        "text": "Mais les désirs de la femme ne s'arrêtèrent pas là. Bientôt, elle trouva la nouvelle auge insuffisante et insista pour que son mari demande au poisson doré une nouvelle maison. Une fois de plus, le vieil homme obéit, et leur humble demeure fut remplacée par une belle maison neuve.",
+        "imageUrl": "page3.png"
+      },
+      {
+        "title": "Titres et pouvoir",
+        "text": "Devenant de plus en plus ambitieuse, la vieille femme demanda à devenir une noble. Le patient poisson doré exauça également ce vœu, et elle vécut dans la grandeur avec des serviteurs. Pourtant, son mécontentement continua de couver.",
+        "imageUrl": "page4.png"
+      },
+      {
+        "title": "La quête de la royauté",
+        "text": "Ensuite, la femme insatiable ordonna à son mari de demander au poisson doré de la faire reine. Malgré la mer orageuse reflétant son avidité croissante, le poisson exauça une fois de plus son vœu, et elle devint une puissante souveraine.",
+        "imageUrl": "page5.png"
+      },
+      {
+        "title": "La chute",
+        "text": "Finalement, dans son ultime acte de cupidité, la vieille femme demanda à devenir la souveraine de la mer elle-même, ordonnant au poisson doré d'être son serviteur. La mer se déchaîna avec fureur. Lorsque le vieil homme rentra chez lui, le palais avait disparu, et ils étaient de retour dans leur vieille cabane avec l'auge cassée, ayant tout perdu.",
+        "imageUrl": "page6.png"
+      }
+    ]
+  }

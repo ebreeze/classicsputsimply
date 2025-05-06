@@ -1,8 +1,7 @@
 package com.viannele.classicsputsimply;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.viannele.classicsputsimply.model.Classic;
+import com.viannele.classicsputsimply.service.ClassicsService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
@@ -10,9 +9,8 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.ClassPathResource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -23,13 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @RestController
 @RequestMapping("/api/v1/classics")
@@ -38,13 +30,11 @@ public class ClassicsController {
 
     private static final Logger logger = LoggerFactory.getLogger(ClassicsController.class);
 
-    @Value("classpath:data/fairy_tales.json")
-    private Resource fairyTalesResource;
+    private final ClassicsService classicsService;
 
-    @Value("classpath:data/legends.json")
-    private Resource legendsResource;
-
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    public ClassicsController(ClassicsService classicsService) {
+        this.classicsService = classicsService;
+    }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(
@@ -59,29 +49,10 @@ public class ClassicsController {
     )
     public ResponseEntity<List<Classic>> getAllClassics(@RequestParam(name = "lang", required = false, defaultValue = "en") String lang) {
         try {
-            InputStream fairyTalesInputStream = fairyTalesResource.getInputStream();
-            List<Classic> fairyTales = objectMapper.readValue(fairyTalesInputStream, new TypeReference<List<Classic>>() {});
-
-            InputStream legendsInputStream = legendsResource.getInputStream();
-            List<Classic> legends = objectMapper.readValue(legendsInputStream, new TypeReference<List<Classic>>() {});
-
-            List<Classic> allClassics = Stream.concat(fairyTales.stream(), legends.stream())
-                    .map(classic -> {
-                        String translatedTitle = classic.getTitles().getOrDefault(lang, classic.getName());
-                        // Create a new Classic object with the translated name
-                        Classic translatedClassic = new Classic();
-                        translatedClassic.setId(classic.getId());
-                        translatedClassic.setName(translatedTitle);
-                        translatedClassic.setTitles(classic.getTitles()); // Still include all titles
-                        translatedClassic.setSlug(classic.getSlug());
-                        return translatedClassic;
-                    })
-                    .collect(Collectors.toList());
-
+            List<Classic> allClassics = classicsService.getAllClassics(lang);
             return new ResponseEntity<>(allClassics, HttpStatus.OK);
-
         } catch (IOException e) {
-            logger.error("Error reading or processing classics data:", e);
+            logger.error("Error retrieving classics:", e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -96,24 +67,36 @@ public class ClassicsController {
             }
     )
     public ResponseEntity<Classic> getClassicContentBySlug(
-            @PathVariable @Parameter(description = "Slug of the classic story (e.g., little-red-riding-hood)") String slug,
+            @PathVariable @Parameter(
+                    description = "Slug of the classic story (e.g., little-red-riding-hood)",
+                    example = "little-red-riding-hood",
+                    name = "slug"
+            ) String slug,
             @RequestParam(name = "lang", defaultValue = "en") String lang) {
         try {
-            String resourcePath = "data/stories/" + slug + "/" + lang + ".json";
-            Resource storyResource = new ClassPathResource(resourcePath);
-
-            if (!storyResource.exists()) {
+            Classic classic = classicsService.getClassicContentBySlug(slug, lang);
+            if (classic != null) {
+                return new ResponseEntity<>(classic, HttpStatus.OK);
+            } else {
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);
             }
-
-            InputStream inputStream = storyResource.getInputStream();
-            Classic classic = objectMapper.readValue(inputStream, Classic.class);
-
-            return new ResponseEntity<>(classic, HttpStatus.OK);
-
         } catch (IOException e) {
-            logger.error("Error reading or processing classics data:", e);
+            logger.error("Error retrieving classic content:", e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/pdf/{slug}")
+    public ResponseEntity<byte[]> generatePdf(@PathVariable String slug) {
+        // Implementation to generate PDF using classicsService
+        try {
+            byte[] pdfBytes = classicsService.generatePdf(slug); //  Make sure this method exists
+            return ResponseEntity.ok()
+                    .header("Content-Type", "application/pdf")
+                    .body(pdfBytes);
+        } catch (Exception e) {
+            logger.info("PDF Generation Exception: ", e);
+            return ResponseEntity.internalServerError().build();
         }
     }
 }

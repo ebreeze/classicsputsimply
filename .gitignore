@@ -2,7 +2,7 @@
 
 ### Spring Boot ###
 /target/
-!/target/classes/application.properties
+!/target/classes/properties
 !/target/classes/application.yml
 
 ### IntelliJ IDEA ###

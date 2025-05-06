@@ -1,0 +1,36 @@
+{
+  "name": "Der Fischer und der goldene Fisch",
+  "slug": "the-fisherman-and-the-golden-fish",
+  "pages": [
+    {
+      "title": "Die Entdeckung",
+      "text": "Es lebten einst ein armer Fischer und seine Frau am Meer. Eines Tages fing der alte Mann einen goldenen Fisch, der sprechen konnte! Der Fisch flehte um sein Leben und versprach, jeden Wunsch zu erfüllen, wenn man ihn freiließ. Der überraschte Fischer ließ ihn frei, ohne etwas zu verlangen.",
+      "imageUrl": "page1.png"
+    },
+    {
+      "title": "Die ersten Forderungen",
+      "text": "Als der alte Mann nach Hause kam, erzählte er seiner Frau von dem Wunder. Sie schalt ihn wegen seiner Dummheit und forderte ihn auf, zum Fisch zurückzukehren und einen neuen Trog zu verlangen, da ihrer zerbrochen war. Widerwillig ging der alte Mann zurück, und der goldene Fisch erfüllte ihren ersten Wunsch.",
+      "imageUrl": "page2.png"
+    },
+    {
+      "title": "Steigender Ehrgeiz",
+      "text": "Doch die Wünsche der Frau hörten nicht auf. Bald fand sie den neuen Trog unzureichend und bestand darauf, dass ihr Mann den goldenen Fisch um ein neues Haus bat. Wieder gehorchte der alte Mann, und ihre bescheidene Hütte wurde durch ein schönes neues Haus ersetzt.",
+      "imageUrl": "page3.png"
+    },
+    {
+      "title": "Titel und Macht",
+      "text": "Immer ehrgeiziger werdend, verlangte die alte Frau, eine Adlige zu werden. Der geduldige goldene Fisch erfüllte auch diesen Wunsch, und sie lebte in Pracht mit Dienern. Doch ihre Unzufriedenheit wuchs weiter.",
+      "imageUrl": "page4.png"
+    },
+    {
+      "title": "Das Streben nach Königtum",
+      "text": "Als Nächstes befahl die unersättliche Frau ihrem Mann, den goldenen Fisch zu bitten, sie zur Königin zu machen. Trotz des stürmischen Meeres, das ihre wachsende Gier widerspiegelte, erfüllte der Fisch erneut ihren Wunsch, und sie wurde eine mächtige Herrscherin.",
+      "imageUrl": "page5.png"
+    },
+    {
+      "title": "Der Fall",
+      "text": "Schließlich, in ihremultimativengierigen Akt, verlangte die alte Frau, die Herrscherin des Meeres selbst zu werden und befahl dem goldenen Fisch, ihr Diener zu sein. Das Meer tobte in Wut. Als der alte Mann nach Hause zurückkehrte, war der Palast verschwunden, und sie befanden sich wieder in ihrer alten Hütte mit dem zerbrochenen Trog, nachdem sie alles verloren hatten.",
+      "imageUrl": "page6.png"
+    }
+  ]
+}
