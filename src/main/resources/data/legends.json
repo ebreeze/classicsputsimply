@@ -1,20 +1,26 @@
 [
-  { "id": "lg001",
+  {
+    "id": "lg001",
     "name": "King Arthur",
     "titles": {
       "en": "King Arthur",
       "de": "König Artus",
-      "fr": "Le roi Arthur"
+      "fr": "Le roi Arthur",
+      "it": "Re Artù",
+      "bg": "Крал Артур"
     },
     "slug": "king-arthur"
   },
-  { "id": "lg002",
-    "name": "Robin Hood",
+  {
+    "id": "lg002",
+    "name": "Pandoras' Box",
     "titles": {
-      "en": "Robin Hood",
-      "de": "Robin Hood",
-      "fr": "Robin des Bois"
+      "en": "Pandoras' Box",
+      "de": "Die Büchse der Pandora",
+      "fr": "La boîte de Pandore",
+      "it": "Il vaso di Pandora",
+      "bg": "Кутията на Пандора"
     },
-    "slug": "robin-hood"
+    "slug": "pandoras-box"
   }
 ]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "fb001",
+    "name":  "The Tortoise and the Hare",
+    "slug": "the-tortoise-and-the-hare",
+    "titles": {
+      "ен": "The Tortoise and the Hare",
+      "bg": "Заекът и Костенурката",
+      "fr": "Le Lièvre et la Tortue",
+      "it": "La Lepre e la Tartaruga",
+      "de": "Der Hase und die Schildkröte"
+    }
+  }
+]

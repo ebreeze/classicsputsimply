@@ -23,6 +23,7 @@ import com.itextpdf.io.image.ImageDataFactory;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -36,6 +37,9 @@ public class ClassicsServiceImpl implements ClassicsService {
 
     @Value("classpath:data/legends.json")
     private Resource legendsResource;
+
+    @Value("classpath:data/fables.json")
+    private Resource fablesResource;
 
     private final ObjectMapper objectMapper;
 
@@ -54,7 +58,11 @@ public class ClassicsServiceImpl implements ClassicsService {
         InputStream legendsInputStream = legendsResource.getInputStream();
         List<Classic> legends = objectMapper.readValue(legendsInputStream, new TypeReference<List<Classic>>() {});
 
-        return Stream.concat(fairyTales.stream(), legends.stream())
+        InputStream fablesInputStream = fablesResource.getInputStream();
+        List<Classic> fables = objectMapper.readValue(fablesInputStream, new TypeReference<List<Classic>>() {});
+        return
+            Stream.of(fairyTales.stream(), legends.stream(), fables.stream())
+                .flatMap(Function.identity()) // Or .flatMap(s -> s)
                 .map(classic -> {
                     String translatedTitle = classic.getTitles().getOrDefault(lang, classic.getName());
                     Classic translatedClassic = new Classic();

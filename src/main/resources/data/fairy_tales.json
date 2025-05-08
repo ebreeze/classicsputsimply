@@ -3,18 +3,12 @@
     "id": "ft001",
     "name": "Little Red Riding Hood",
     "titles": {
+      "en": "Little Red Riding Hood",
+      "fr": "Le Petit Chaperon rouge",
+      "it": "Cappuccetto Rosso",
       "de": "Rotkäppchen",
-      "fr": "Le Petit Chaperon rouge"
+      "bg": "Червената шапчица"
     },
     "slug": "little-red-riding-hood"
-  },
-  {
-    "id": "ft002",
-    "name": "Cinderella",
-    "titles": {
-      "de": "Aschenputtel",
-      "fr": "Cendrillon"
-    },
-    "slug": "cinderella"
   }
 ]
