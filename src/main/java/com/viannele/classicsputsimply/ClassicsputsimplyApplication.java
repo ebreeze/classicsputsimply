@@ -19,7 +19,7 @@ public class ClassicsputsimplyApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/api/v1/**")
-				        .allowedOrigins("https://classicsputsimple.com", "http://localhost:81", "http://localhost:80", "http://localhost:5173", "http://localhost:8000")
+				        .allowedOrigins("https://classicsputsimple.com", "https://classicsputsimply.onrender.com/", "https://classics.onrender.com/", "http://localhost:81", "http://localhost:80", "http://localhost:5173", "http://localhost:8000")
 						.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 						.allowedHeaders("*")
 						.allowCredentials(true)
