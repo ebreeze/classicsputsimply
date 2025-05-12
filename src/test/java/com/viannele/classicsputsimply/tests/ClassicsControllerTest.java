@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.TestConfiguration;
-import org.springframework.context.annotation.Bean;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
@@ -33,20 +32,12 @@ public class ClassicsControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @TestConfiguration
-    static class ClassicsControllerTestConfig {
-        @Bean
-        public ClassicsService classicsService() {
-            return Mockito.mock(ClassicsService.class);
-        }
-    }
-
-    @Autowired
-    private ClassicsService classicsService; // Inject the mocked bean
+    @MockBean
+    private ClassicsService classicsService;
 
     @Test
     @WithMockUser
-    void getAllClassics_returnsOkAndListOfClassics() throws Exception {
+    void getAllClassicsReturnsOkAndListOfClassics() throws Exception {
 
         Map<String, String> titles1 = new HashMap<>();
         titles1.put("en", "Little Red Riding Hood");
@@ -70,7 +61,7 @@ public class ClassicsControllerTest {
 
     @Test
     @WithMockUser
-    void getAllClassics_withLangParam_returnsTranslatedTitles() throws Exception {
+    void getAllClassicsWithLangParamReturnsTranslatedTitles() throws Exception {
         Map<String, String> titles1 = new HashMap<>();
         titles1.put("en", "Little Red Riding Hood");
         titles1.put("de", "Rotkäppchen");
@@ -90,7 +81,7 @@ public class ClassicsControllerTest {
 
     @Test
     @WithMockUser
-    void getAllClassics_serviceThrowsException_returnsInternalServerError() throws Exception {
+    void getAllClassicsServiceThrowsExceptionAndReturnsInternalServerError() throws Exception {
         when(classicsService.getAllClassics(Mockito.anyString())).thenThrow(new IOException("Failed to read data"));
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/classics")
@@ -100,7 +91,7 @@ public class ClassicsControllerTest {
 
     @Test
     @WithMockUser
-    void getClassicContentBySlug_returnsOkAndClassic() throws Exception {
+    void getClassicContentBySlugReturnsOkAndClassic() throws Exception {
         Classic classic = new Classic("first_id", "Little Red Riding Hood", "little-red-riding-hood", Collections.emptyMap());
         when(classicsService.getClassicContentBySlug("little-red-riding-hood", "en")).thenReturn(classic);
 
@@ -113,7 +104,7 @@ public class ClassicsControllerTest {
 
     @Test
     @WithMockUser
-    void getClassicContentBySlug_storyNotFound_returnsNotFound() throws Exception {
+    void getClassicContentBySlugStoryNotFoundReturnsNotFound() throws Exception {
         when(classicsService.getClassicContentBySlug("non-existent-slug", "en")).thenReturn(null);
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/classics/story/non-existent-slug")
@@ -123,7 +114,7 @@ public class ClassicsControllerTest {
 
     @Test
     @WithMockUser
-    void getClassicContentBySlug_serviceThrowsException_returnsInternalServerError() throws Exception {
+    void getClassicContentBySlugServiceThrowsExceptionReturnsInternalServerError() throws Exception {
         when(classicsService.getClassicContentBySlug(Mockito.anyString(), Mockito.anyString()))
                 .thenThrow(new IOException("Failed to read story"));
 

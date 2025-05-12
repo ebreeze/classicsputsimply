@@ -28,7 +28,7 @@ import java.util.List;
 @Tag(name = "Classics", description = "Operations related to simplified classic stories")
 public class ClassicsController {
 
-    private static final Logger logger = LoggerFactory.getLogger(ClassicsController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ClassicsController.class);
 
     private final ClassicsService classicsService;
 
@@ -52,7 +52,7 @@ public class ClassicsController {
             List<Classic> allClassics = classicsService.getAllClassics(lang);
             return new ResponseEntity<>(allClassics, HttpStatus.OK);
         } catch (IOException e) {
-            logger.error("Error retrieving classics:", e);
+            LOGGER.error("Error retrieving classics:", e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -81,7 +81,7 @@ public class ClassicsController {
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);
             }
         } catch (IOException e) {
-            logger.error("Error retrieving classic content:", e);
+            LOGGER.error("Error retrieving classic content:", e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -95,7 +95,7 @@ public class ClassicsController {
                     .header("Content-Type", "application/pdf")
                     .body(pdfBytes);
         } catch (Exception e) {
-            logger.info("PDF Generation Exception: ", e);
+            LOGGER.info("PDF Generation Exception: ", e);
             return ResponseEntity.internalServerError().build();
         }
     }

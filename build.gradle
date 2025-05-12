@@ -2,6 +2,9 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.4.5'
 	id 'io.spring.dependency-management' version '1.1.7'
+	id 'checkstyle'
+	id 'pmd'
+	id 'com.github.spotbugs' version '6.0.15' // Use the latest version
 }
 
 group = 'com.viannele'
@@ -22,7 +25,7 @@ configurations {
 repositories {
 	mavenCentral()
 	maven {
-		url 'https://repo.itextsupport.com/releases'
+		url = 'https://repo.itextsupport.com/releases'
 	}
 }
 dependencies {
@@ -48,8 +51,34 @@ dependencies {
 	implementation 'com.itextpdf:layout:7.2.5'
 	implementation 'com.itextpdf:io:7.2.5'
 	implementation 'com.itextpdf:font-asian:7.2.5'
+
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
 }
 
+checkstyle {
+	toolVersion = '10.23.1' // Use the latest version
+	configFile = file('config/checkstyle/checkstyle.xml') // Optional: Specify your configuration file
+	ignoreFailures = false // Fail the build if Checkstyle violations are found
+	reportsDir = file("$buildDir/reports/checkstyle")
+}
+
+pmd {
+	toolVersion = '7.1.0' // Use the latest version
+	ruleSets = [] // Define rule sets e.g. 'java-basic', 'java-typeresolution', 'java-unnecessary'
+	ignoreFailures = true // Fail the build if PMD violations are found
+	reportsDir = file("$buildDir/reports/pmd")
+	ruleSetFiles = files('config/pmd/ruleset.xml') // Optional: Specify your custom ruleset
+}
+
+spotbugs {
+	toolVersion = '4.9.3' // Use the latest version
+	ignoreFailures = false // Fail the build if SpotBugs finds potential bugs
+	reportsDir = file("$buildDir/reports/spotbugs")
+	excludeFilter = file('config/spotbugs/exclude.xml') // Optional: Specify an exclusion filter
+}
 
 tasks.named('test') {
 	useJUnitPlatform()
@@ -57,4 +86,8 @@ tasks.named('test') {
 
 tasks.named('bootJar') {
 	mainClass.set('com.viannele.classicsputsimply.ClassicsputsimplyApplication')
+}
+
+tasks.named('check') {
+	dependsOn checkstyleMain, checkstyleTest, pmdMain, pmdTest, spotbugsMain, spotbugsTest
 }

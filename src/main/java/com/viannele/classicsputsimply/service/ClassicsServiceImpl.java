@@ -8,8 +8,7 @@ import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.properties.AreaBreakType;
 import com.itextpdf.layout.properties.TextAlignment;
 import com.viannele.classicsputsimply.model.Classic;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
@@ -30,8 +29,6 @@ import java.util.stream.Stream;
 @Service
 public class ClassicsServiceImpl implements ClassicsService {
 
-    private static final Logger logger = LoggerFactory.getLogger(ClassicsServiceImpl.class);
-
     @Value("classpath:data/fairy_tales.json")
     private Resource fairyTalesResource;
 
@@ -41,14 +38,11 @@ public class ClassicsServiceImpl implements ClassicsService {
     @Value("classpath:data/fables.json")
     private Resource fablesResource;
 
-    private final ObjectMapper objectMapper;
+    @Autowired
+    private ObjectMapper objectMapper;
 
     private static final String STORIES_BASE_PATH = "data/stories/";
     private static final String IMAGES_BASE_PATH = "data/images/";
-
-    public ClassicsServiceImpl(ObjectMapper objectMapper) {
-        this.objectMapper = objectMapper;
-    }
 
     @Override
     public List<Classic> getAllClassics(String lang) throws IOException {
@@ -150,7 +144,7 @@ public class ClassicsServiceImpl implements ClassicsService {
                 if (imageUrl != null && !imageUrl.isEmpty()) {
                     addImageToPdf(document, slug, imageUrl);
                 }
-                if(currentPage < numPages) {
+                if (currentPage < numPages) {
                     document.add(new AreaBreak(AreaBreakType.NEXT_PAGE));
                 }
             }

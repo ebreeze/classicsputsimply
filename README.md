@@ -52,6 +52,12 @@ This guide will help you get the backend REST API up and running.
     This will start the Spring Boot application, and it will be accessible on port `8080` by default. 
 You should see logs in your console indicating that the application has started.
 
+4. **Just build** skipping tests and checks
+   ```bash
+    ./gradlew bootJar -x test -x check
+
+    ```
+
 ## Testing the API
 
 Once the application is running, you can test the following endpoints:
@@ -99,3 +105,13 @@ management.endpoints.web.exposure.include=*
     ```bash
     ./gradlew test
     ```
+
+### Deploy
+
+    ```bash
+    docker build -t classicsputsimply .
+    docker login -u ebreeze25
+    docker tag classicsputsimply ebreeze25/classicsputsimply
+    docker push ebreeze25/classicsputsimply
+    ```
+

@@ -1,20 +1,19 @@
 package com.viannele.classicsputsimply.model;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Classic {
     private String id;
     private String name;
     private String slug;
-    private List<Page> pages; // For storing content when fetching a specific story
-    private Map<String, String> titles;
+    private List<Page> pages = new ArrayList<>();
+    private Map<String, String> titles = new HashMap<>();
 
     public Classic(String id, String name, String slug, Map<String, String> titles) {
         this.id = id;
         this.name = name;
         this.slug = slug;
-        this.titles = titles;
+        this.titles = new HashMap<>(titles); // Create a defensive copy
     }
 
     public Classic(String id, String name, String slug) {
@@ -52,22 +51,22 @@ public class Classic {
     }
 
     public List<Page> getPages() {
-        return pages;
+        return pages == null ? Collections.emptyList() : Collections.unmodifiableList(pages);
     }
 
     public void setPages(List<Page> pages) {
-        this.pages = pages;
+        this.pages = new ArrayList<>(pages); // Create a defensive copy
     }
 
     public Map<String, String> getTitles() {
-        return titles;
+        return Collections.unmodifiableMap(titles); // Return an immutable view
     }
 
     public void setTitles(Map<String, String> titles) {
-        this.titles = titles;
+        this.titles = new HashMap<>(titles); // Create a defensive copy
     }
 
     public String getTitle(String lang) {
-        return titles.getOrDefault(lang, titles.get("en")); // Default to English if the requested language is not found
+        return titles.getOrDefault(lang, titles.get("en")); // Default to English if not found
     }
 }

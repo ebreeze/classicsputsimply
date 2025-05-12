@@ -2,7 +2,6 @@ package com.viannele.classicsputsimply.integration_tests;
 
 import com.viannele.classicsputsimply.model.Classic;
 import com.viannele.classicsputsimply.service.ClassicsService;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -24,18 +23,14 @@ import static org.mockito.Mockito.when;
 @AutoConfigureMockMvc
 public class ClassicsControllerIntegrationTest {
 
-    private final MockMvc mockMvc;
+    @Autowired
+    private MockMvc mockMvc;
 
     @org.mockito.Mock
     private ClassicsService classicsService;
 
-    @Autowired
-    public ClassicsControllerIntegrationTest(MockMvc mockMvc) {
-        this.mockMvc = mockMvc;
-    }
-
     @Test
-    void getAllClassics_shouldReturnListOfClassics() throws Exception {
+    void getAllClassicsShouldReturnAListOfClassics() throws Exception {
         // Arrange
         Classic classic1 = new Classic();
         classic1.setSlug("little-red-riding-hood");
@@ -50,14 +45,14 @@ public class ClassicsControllerIntegrationTest {
 
         // Act & Assert
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/classics")
-                        .contentType(MediaType.APPLICATION_JSON))
+                .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].slug", is("little-red-riding-hood")))
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].name", is("Little Red Riding Hood")));
     }
 
     @Test
-    void getAllClassics_withLangParam_shouldReturnTranslatedTitles() throws Exception {
+    void getAllClassicsWithLangParamShouldReturnTranslatedTitles() throws Exception {
         // Arrange
         Classic classic1 = new Classic();
         classic1.setSlug("little-red-riding-hood");
@@ -74,6 +69,5 @@ public class ClassicsControllerIntegrationTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].slug", is("little-red-riding-hood")))
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].name", is("Rotkäppchen")));
     }
-
 
 }
