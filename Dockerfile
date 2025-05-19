@@ -8,11 +8,19 @@ COPY gradlew .
 COPY gradlew.bat .
 COPY gradle/ ./gradle/
 
-# Copy the application source code
+# Copy only necessary parts of the source code for dependency resolution and caching
+COPY src/main/java ./src/main/java
+COPY src/main/resources ./src/main/resources
+
+# Resolve and cache dependencies
+RUN chmod +x gradlew
+RUN ./gradlew dependencies --write-locks
+
+# Copy the entire source code now that dependencies are cached
 COPY src/ ./src/
 
-RUN chmod +x gradlew
-RUN ./gradlew bootJar
+# Build the application skipping tests and linting to improve build performance
+RUN ./gradlew bootJar -x test -x check
 
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app

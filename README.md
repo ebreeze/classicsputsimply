@@ -115,3 +115,14 @@ management.endpoints.web.exposure.include=*
     docker push ebreeze25/classicsputsimply
     ```
 
+Run it locally: 
+    ```bash
+    docker run -p 8080:8080 classicsputsimply
+      ```
+
+
+Troubleshooting: in case Docker was not running you need to start it before building:
+    ```bash
+    sudo systemctl start docker
+    ```
+
